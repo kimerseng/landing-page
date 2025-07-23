@@ -1,0 +1,219 @@
+<!-- Header -->
+<div class="container mx-auto px-4">
+<header class="sticky top-0 z-50 bg-black text-white px-6 py-4 border-b border-gray-800">
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+    <img src="<%= asset_path('logo.png') %>" alt="Hang Meas Logo" class="w-12 h-12 object-contain rounded-full" />
+    <span class="text-2xl font-bold">Hang Meas</span>
+    </div>
+  
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-8 justify-center flex-1">
+      <a href="#features" class="hover:text-[#F59B1D]">Features</a>
+      <a href="#how-it-works" class="hover:text-[#F59B1D]">How It Works</a>
+      <a href="#download" class="hover:text-[#F59B1D]">Download</a>
+      <a href="<%= new_path %>" class="hover:text-[#F59B1D]">Term Conditioner</a>
+    </nav>
+
+    <!-- Desktop Button -->
+    <div class="hidden md:block">
+      <a href="#download" class="bg-[#F59B1D] px-4 py-3 rounded-full font-semibold hover:opacity-90">Get Started</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex flex-col mt-4 bg-white rounded-lg text-black shadow-lg md:hidden">
+    <a href="#features" class="py-2 px-4 hover:bg-gray-100 hover:text-[#F59B1D]">Features</a>
+    <a href="#how-it-works" class="py-2 px-4 hover:bg-gray-100 hover:text-[#F59B1D]">How It Works</a>
+    <a href="#download" class="py-2 px-4 hover:bg-gray-100 hover:text-[#F59B1D]">Download</a>
+    <a href="<%= new_path %>" class="py-2 px-4 hover:bg-gray-100 hover:text-[#F59B1D]">About</a>
+    <a href="#download" class="mt-2 w-full py-2 px-4 text-center font-semibold text-white bg-[#F59B1D] hover:opacity-90 rounded-b-lg transition">
+      Get Started
+    </a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-black text-white flex flex-col lg:flex-row justify-center items-center py-32 px-8">
+  <!-- Left Content -->
+  <div class="max-w-2xl text-center lg:text-left lg:mr-12">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Your Ticket to <span class="text-[#F59B1D]">Unforgettable</span>  Live Experiences
+    </h1>
+    <p class="text-xl md:text-2xl mb-10">
+      Discover, book, and enjoy concerts, sports events, and more with the ultimate entertainment app.
+    </p>
+    <a href="#download" class="bg-[#F59B1D] px-6 py-3 rounded-full font-semibold hover:opacity-90 inline-block text-lg">
+      Download Now
+    </a>
+  </div>
+
+  <!-- Right: Phone Frame -->
+  <div class="mt-14 lg:mt-0 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl flex justify-center">
+    <div class="border border-gray-800 rounded-3xl  w-[350px] h-[580px] flex items-center justify-center">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SRRmhH4X5N2e4QalcoxVbzYsD44C-sQv-w&s"
+        alt="App Screenshot"
+        class="w-full h-full object-cover rounded-3xl"
+      />
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Features Section -->
+<section id="features" class=" py-12 sm:py-20 bg-black text-white">
+  <!-- Decorative Background Shapes -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-10 right-4 sm:right-20 w-48 h-48 sm:w-72 sm:h-72 bg-purple-500/20 blur-3xl"></div>
+    <div class="absolute bottom-10 left-4 sm:left-20 w-48 h-48 sm:w-64 sm:h-64 bg-yellow-500/20 blur-3xl"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 relative z-10 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+      Experience Entertainment <span class="text-[#F59B1D]">Like Never Before</span>
+    </h2>
+    <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 sm:mb-16">
+      Discover the features that make Hang Meas the ultimate entertainment companion
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+      <!-- Feature 1 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-yellow-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-yellow-400 text-2xl sm:text-4xl">🎫</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Easy Event Discovery</h3>
+        <p class="text-sm sm:text-base text-gray-300">Browse thousands of concerts, sports matches, and live shows near you or across the globe.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16  flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-blue-400 text-2xl sm:text-4xl">🔒</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Secure Ticket Booking</h3>
+        <p class="text-sm sm:text-base text-gray-300">Purchase tickets quickly and securely with multiple payment options and instant confirmations.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-green-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16  flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-green-400 text-2xl sm:text-4xl">✨</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Personalized Recommendations</h3>
+        <p class="text-sm sm:text-base text-gray-300">Get tailored suggestions for events based on your interests and past attendance.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16  flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-purple-400 text-2xl sm:text-4xl">📍</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Venue & Event Info</h3>
+        <p class="text-sm sm:text-base text-gray-300">Access detailed venue maps, seating charts, and real-time event updates.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-pink-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16  flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-pink-400 text-2xl sm:text-4xl">👥</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Share with Friends</h3>
+        <p class="text-sm sm:text-base text-gray-300">Easily share event details and invite friends to join you for the ultimate experience.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-yellow-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16  flex items-center justify-center mb-4 sm:mb-6">
+          <span class="text-yellow-400 text-2xl sm:text-4xl">💎</span>
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Exclusive Deals & Perks</h3>
+        <p class="text-sm sm:text-base text-gray-300">Unlock special discounts, early bird access, and VIP experiences for top events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-20 px-6 text-center bg-black text-white relative">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">
+      Your Journey to <span class="text-[#F59B1D]">Live Entertainment</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Step 1 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-yellow-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-500/50 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
+          1
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center">Discover Events</h3>
+        <p class="text-sm sm:text-base text-gray-300 text-center">Explore a vast selection of concerts and sports events tailored to your interests.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-500/50 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
+          2
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center">Book Your Tickets</h3>
+        <p class="text-sm sm:text-base text-gray-300 text-center">Secure your spot with our simple, fast, and secure ticketing process.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-green-400/50 transition-all duration-300 hover:scale-105 cursor-pointer text-left">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500/50 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
+          3
+        </div>
+        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center">Enjoy the Experience</h3>
+        <p class="text-sm sm:text-base text-gray-300 text-center">Head to the venue and immerse yourself in an unforgettable live event!</p>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- Download Section -->
+<section id="download" class="py-20 px-6 text-center  ">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">Ready to Experience the Difference?</h2>
+  <p class="mb-10">Download Hang Meas App today and start your journey towards greater efficiency and success.</p>
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+    <a href="https://apps.apple.com/" target="_blank" rel="noopener">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="h-14" />
+    </a>
+    <a href="https://play.google.com/store" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-14" />
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-8 border-t border-gray-800 text-sm">
+  <p>© 2025 Hang Meas App. All rights reserved.</p>
+  <div class="mt-2 flex justify-center space-x-4">
+    <a href="#" class="hover:text-[#F59B1D]">Privacy Policy</a>
+    <a href="#" class="hover:text-[#F59B1D]">Terms of Service</a>
+    <a href="#" class
+    <a href="#" class="hover:text-[#F59B1D]">Contact Us</a>
+  </div>
+</footer>
+</div>
+
+<!-- JavaScript for mobile menu toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
