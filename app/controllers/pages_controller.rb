@@ -1,7 +1,10 @@
 class PagesController < ApplicationController
   def home
   end
-  def new
-    # This can be empty if just rendering static content
+
+  def privacy
+  end
+
+  def terms
   end
 end
